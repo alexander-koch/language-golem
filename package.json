@@ -1,0 +1,16 @@
+{
+    "name": "language-golem",
+    "main": "./lib/language-golem",
+    "version": "0.0.0",
+    "description": "Golem language support in Atom",
+    "license": "MIT",
+    "engines": {
+        "atom": "*"
+    },
+    "dependencies": {},
+    "homepage": "https://github.com/alexander-koch/language-golem",
+    "repository": {
+        "type" : "git",
+        "url" : "git+https://github.com/alexander-koch/language-golem.git"
+    }
+}

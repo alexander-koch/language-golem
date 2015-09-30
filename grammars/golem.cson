@@ -1,0 +1,72 @@
+'name': 'Golem-script'
+'scopeName': 'source.gs'
+'fileTypes': [
+	'gs',
+	'golem'
+]
+
+'patterns': [
+	# Comments
+	{
+		'comment': "Line comment"
+		'name': 'comment.line.number-sign.golem'
+		'match': '((#).*$\\n?)'
+	}
+	# String
+	{
+		'comment': 'String literal'
+		'name': 'string.quoted.double.golem'
+		'begin': 'b?"'
+		'end': '"'
+	}
+	# Numeric
+	{
+		'comment': 'Floating point literal'
+		'name': 'constant.numeric.float.golem'
+		'match': '\\b[0-9][0-9_]*(\\.[0-9][0-9_]*)?\\b'
+	}
+	{
+		'comment': 'Integer literal'
+		'name': 'constant.numeric.integer.decimal.golem'
+		'match': '\\b[0-9][0-9_]*\\b'
+	}
+	{
+    	'comment': 'Boolean constant'
+    	'name': 'constant.language.boolean.golem'
+    	'match': '\\b(true|false)\\b'
+  	}
+	# Language
+	{
+    	'comment': 'Control keyword'
+    	'name': 'keyword.control.golem'
+    	'match': '\\b(if|else|return|while)\\b'
+  	}
+	{
+		'comment': 'Keyword'
+		'name': 'keyword.other.golem'
+		'match': '\\b(let|using|type|func)\\b'
+	}
+	# Storage
+	{
+    	'comment': 'Mutable storage modifier'
+    	'name': 'storage.modifier.golem'
+    	'match': '\\b(mut)\\b'
+  	}
+	{
+    	'comment': 'Built-in/core type'
+    	'name': 'storage.type.golem'
+    	'match': '\\b(bool|char|float|int|str|void)\\b'
+ 	}
+	# Operators
+	{
+    	'comment': 'Operator'
+    	'name': 'keyword.operator.golem'
+    	'match': '(\\+|-|/|\\*|=|<=|>=|\\^|&|\\||!|%|<<|>>|>|<|:=)'
+  	}
+	# Annotation
+	{
+		'comment': 'Annotation'
+		'name': 'storage.type.annotation.golem'
+		'match': '@\\w*'
+	}
+]
