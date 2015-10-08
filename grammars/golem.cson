@@ -44,7 +44,19 @@
 	{
 		'comment': 'Keyword'
 		'name': 'keyword.other.golem'
-		'match': '\\b(let|using|type|func)\\b'
+		'match': '\\b(let|type|func)\\b'
+	}
+	{
+		'comment': 'Import'
+		'name': 'keyword.other.import.golem'
+		'match': '\\b(using)\\b'
+	}
+	{
+		'comment': 'Function call'
+		'name': 'entity.name.function.golem'
+		'match': '(\\w+)\\s*\\('
+		#'begin': '(\\w+)\\s*\\('
+		#'end': '(\\)+)'
 	}
 	# Storage
 	{
